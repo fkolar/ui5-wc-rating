@@ -1,0 +1,15 @@
+<div>This is: aui5-rating. {{pleaseWaitText}}</div>
+
+<div class="aui5-stars" @ui5-click="{{_updateRating}}">
+    {{#each _starsState}}
+        {{#if this.isSelected}}
+            <slot></slot>
+            <ui5-icon interactive="true" name="favorite" class="aui5-star aui5-star-size" data-value="{{this.index}}"></ui5-icon>
+        {{else}}
+            <ui5-icon interactive="true" name="unfavorite" class="aui5-star" data-value="{{this.index}}"></ui5-icon>
+        {{/if}}
+    {{/each}}
+
+</div>
+
+
