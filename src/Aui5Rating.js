@@ -16,8 +16,9 @@ import {PLEASE_WAIT} from "./generated/i18n/i18n-defaults.js";
 
 const metadata = {
     tag: "aui5-rating",
-    properties: {
+    properties: /** @lends sap.ui.webcomponents.main.Aui5Rating.prototype */ {
         /**
+         * @type {Integer}
          * @defaultvalue 5
          * @public
          */
@@ -27,6 +28,7 @@ const metadata = {
         },
 
         /**
+         * @type {Integer}
          * @defaultvalue 0
          * @public
          */
@@ -36,7 +38,6 @@ const metadata = {
         },
 
         /**
-         * @defaultvalue 0
          * @private
          */
         _currentRating: {
@@ -45,7 +46,6 @@ const metadata = {
         },
 
         /**
-         * @defaultvalue 0
          * @private
          */
         _starsState: {
@@ -53,12 +53,25 @@ const metadata = {
             multiple: true
         }
     },
-    slots: {},
-    events: {
+    slots:  /** @lends sap.ui.webcomponents.main.Aui5Rating.prototype */  {},
+    events: /** @lends sap.ui.webcomponents.main.Aui5Rating.prototype */  {
+        /**
+         * @event
+         * @public
+         */
         rated: {}
     },
 };
 
+/**
+ * @constructor
+ * @author Frank
+ * @alias sap.ui.webcomponents.main.Aui5Rating
+ * @extends UI5Element
+ * @tagname aui5-rating
+ * @public
+ * @since 1.0.0
+ */
 class Aui5Rating extends UI5Element {
 
     constructor() {
@@ -121,6 +134,11 @@ class Aui5Rating extends UI5Element {
                 index: i
             })
         }
+    }
+
+    _onClick(event) {
+        event.stopPropagation();
+        console.log('onClick: ', event);
     }
 }
 
