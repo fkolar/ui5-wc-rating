@@ -1,0 +1,109 @@
+# See http://help.github.com/ignore-files/ for more about ignoring files.
+
+# compiled output
+/dist
+/tmp
+/out-tsc
+/typedoc
+/apps/docs/src/assets/typedoc
+
+/apps/docs/src/assets/README.md
+/apps/docs/src/assets/CORE_README.md
+/apps/docs/src/assets/NEW_COMPONENT.md
+/apps/docs/src/assets/PLATFORM_README.md
+/apps/docs/src/assets/NEW_PLATFORM_COMPONENT.md
+/apps/docs/src/assets/*.css
+# dependencies
+**/node_modules
+
+# IDEs and editors
+/.idea
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+
+# IDE - VSCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# misc
+/.sass-cache
+/connect.lock
+/coverage
+/libpeerconnection.log
+npm-debug.log
+testem.log
+/typings
+report.*.json
+
+# e2e
+/e2e/*.js
+/e2e/*.map
+
+# System Files
+.DS_Store
+Thumbs.db
+
+# Ignore .gitignore, target, dist and tmp folders
+.gitignore
+tmp
+temp
+target
+dist
+.port
+
+# Ignore default target directory for the npm package 'ui5-codecompletion'
+.ui5
+
+# Ignore npm files/folders
+node_modules
+npm-debug.log
+package-lock.json
+
+# Ignore Mac files
+.DS_Store
+
+# Ignore Visual Studio project and settings files
+*.sln
+*.suo
+web.config
+/.user.project.json
+/sap-ui-cachebuster-info.json
+
+# Ignore Visual Studio Code project and settings files
+.vscode/
+.idea/
+
+# Ignore yarn files
+yarn-error.log*
+yarn-debug.log*
+.yarn-integrity
+
+# Ignore default target directory for the npm package 'ui5-schemas'
+.tmp
+
+# Ignore rollup CJS output file of icon-collection-bundler
+icon-collection-bundler.cjs.js
+
+# Playground
+packages/playground/_site/
+packages/playground/.sass-cache/
+packages/playground/assets/js/ui5-webcomponents/
+
+packages/playground/docs/components
+!packages/playground/docs/components/component.md
+
+packages/playground/docs/documentation
+!packages/playground/docs/documentation/documentation.md
+
+packages/playground/docs/tutorials
+!packages/playground/docs/tutorials/tutorials.md
+
+packages/playground/docs/pages/content/main/*
+packages/playground/docs/pages/content/fiori/*
