@@ -14,10 +14,14 @@ import Aui5RatingCss from "./generated/themes/Aui5Rating.css.js";
 
 import {PLEASE_WAIT} from "./generated/i18n/i18n-defaults.js";
 
+/**
+ * @public
+ */
 const metadata = {
     tag: "aui5-rating",
-    properties: /** @lends sap.ui.webcomponents.main.Aui5Rating.prototype */ {
+    properties: /** @lends sap.ui.webcomponents.frank.Aui5Rating.prototype */ {
         /**
+         * Stars
          * @type {Integer}
          * @defaultvalue 5
          * @public
@@ -28,6 +32,7 @@ const metadata = {
         },
 
         /**
+         * Rating
          * @type {Integer}
          * @defaultvalue 0
          * @public
@@ -53,8 +58,8 @@ const metadata = {
             multiple: true
         }
     },
-    slots:  /** @lends sap.ui.webcomponents.main.Aui5Rating.prototype */  {},
-    events: /** @lends sap.ui.webcomponents.main.Aui5Rating.prototype */  {
+    slots:  /** @lends sap.ui.webcomponents.frank.Aui5Rating.prototype */  {},
+    events: /** @lends sap.ui.webcomponents.frank.Aui5Rating.prototype */  {
         /**
          * @event
          * @public
@@ -66,7 +71,7 @@ const metadata = {
 /**
  * @constructor
  * @author Frank
- * @alias sap.ui.webcomponents.main.Aui5Rating
+ * @alias sap.ui.webcomponents.frank.Aui5Rating
  * @extends UI5Element
  * @tagname aui5-rating
  * @public
